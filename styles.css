@@ -3,7 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-color: white;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -13,6 +13,17 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
+
+.title, .addPigDancerButton{
+  padding:5px 12px;
+  float:right;
+}
+
+.title, .addMonkeyDancerButton{
+  padding:5px 12px;
+  float:right;
+}
+
 .topbar{
   height:32px;
   background-color: #555;
@@ -24,4 +35,15 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+.animal{
+  position:absolute;
+}
+
+#pigImg{
+  width: 100px;
+}
+
+#monkeyGif{
+  width: 100px;
 }
