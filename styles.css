@@ -3,23 +3,14 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color: white;
+  background-image: url("pics/background1.png");
+  background-size: cover;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
-}
-
-.title, .addPigDancerButton{
-  padding:5px 12px;
-  float:right;
-}
-
-.title, .addMonkeyDancerButton{
+.title, .Button{
   padding:5px 12px;
   float:right;
 }
@@ -44,6 +35,46 @@ body, a:link, a:visited, a:active{
   width: 100px;
 }
 
-#monkeyGif{
+#monkeyPic{
   width: 100px;
 }
+
+.sticker {
+  position:absolute;
+  animation: spin 4s linear infinite;
+  /*Set our animation play state to paused initially */
+  animation-play-state: running;
+}
+
+@keyframes spin {
+  100% {transform: rotate(1turn); }
+}
+
+.pigBattle {
+  position:absolute;
+  animation: spin 0.4s linear infinite;
+  /*Set our animation play state to paused initially */
+  animation-play-state: running;
+}
+
+.monkeyBattle {
+  -webkit-animation: moveBall 1s infinite linear;
+  animation: moveBall 1s infinite linear;
+}
+
+@keyframes moveBall {
+  0%   { top: 550px; left: 800px; }
+  25%  { top: 675px; left: 850px; }
+  50%  { top: 650px; left: 800px;  -webkit-transform: rotate(360deg);}
+  75%  { top: 675px; left: 750px; }
+  100% { top: 550px; left: 800px; }
+}
+
+@-webkit-keyframes moveBall {
+0%   { top: 550px; left: 800px; }
+25%  { top: 675px; left: 850px; }
+50%  { top: 650px; left: 800px;  -webkit-transform: rotate(360deg);}
+75%  { top: 675px; left: 750px; }
+100% { top: 550px; left: 800px; }
+}
+
